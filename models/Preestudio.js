@@ -1,0 +1,66 @@
+const mongoose = require('mongoose');
+
+const PreestudioSchema = mongoose.Schema({
+    nombre:{
+        type:String,
+        required:true
+    },
+    apellido:{
+        type:String,
+        required:true
+    },
+    telefono:{
+        type:Number,
+        required:true
+    },
+    direccion:{
+        type:String,
+        required:true
+    },
+    texto1:{
+        type:String,
+        required:true
+    },
+    texto2:{
+        type:String,
+        required:true
+    },
+    texto3:{
+        type:String,
+        required:true
+    },
+    texto4:{
+        type:String,
+        required:true
+    },
+    texto5:{
+        type:String,
+        required:true
+    },
+    texto6:{
+        type:String,
+        required:true
+    },
+    texto7:{
+        type:String,
+        required:true
+    },
+    texto8:{
+        type:String,
+        required:true
+    },
+    texto9:{
+        type:String,
+        required:true
+    },
+    texto10:{
+        type:String,
+        required:true
+    },
+    fechacreacion:{
+        type:Date,
+        default:Date.now()
+    }
+});
+
+module.exports = mongoose.model('PreEstudio', PreestudioSchema)
